@@ -1,10 +1,7 @@
-const btnRef = document.querySelector("[data-hero-btn]");
-const resultRef = document.querySelector("[data-result]");
-let result1 = "Hello world!";
+function showMessage() {
+  alert("Hello World!");
+}
 
-function writeAnswer() {
-
-  resultRef.textContent = result1;
-};
-
-btnRef.addEventListener("click", writeAnswer);
+function handleClick(callback) {
+  callback();
+}
